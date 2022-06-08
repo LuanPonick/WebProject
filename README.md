@@ -12,5 +12,7 @@ se houver algum problema você pode me comunicar de maneira mais emergente no me
 
  - [ ] box-sizing
 
+ - [ ] @media()
+
    
 
