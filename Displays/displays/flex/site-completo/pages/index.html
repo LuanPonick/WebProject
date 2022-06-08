@@ -1,0 +1,335 @@
+''<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/example1.css">
+    <link rel="stylesheet" href="../css/example3.css">
+    <link rel="stylesheet" href="../css/exemple4.css">
+    <link rel="stylesheet" href="../css/example5.css">
+    <title>Display-flex</title>
+</head>
+<body>
+    <div id="principal">
+        <header>
+            <ul>
+                <li>redes sociais</li>
+                <li><a href="">linkedin</a></li>
+                <li><a href="">instagram</a></li>
+            </ul>
+            <img src="../imgs/minha-assinatura.png" alt="assinatura">
+        
+        </header>
+    </div>
+    <main>
+        <h1>Propriedade <strong>Flex</strong></h1>
+        <span id="linha-preta">.</span>
+        <ul>
+            <li>
+                <h2>Utilidade</h2>
+                <div class="textos">
+                    <p>O flex é usado para fazer layouts unidimencionais, sendo um metodo que oferece uma distribuição de <strong>espaço entre itens</strong> em uma interface e <strong>recursos de alinhamento</strong></p>
+                </di>
+            </li>
+            <li>
+                <h2>Container e flex itens</h2>
+                <div class="textos">
+                    <p>
+                        Antes de mais nada, o container nada mais é do que uma div,span,h2,h3 ou algum elemento que sirva para "conter" outros elementos.E quando é usado a propriedade <strong>flex block</strong>, nesse container, os elementos que estão dentro dele viram flex itens.   
+                    </p>
+                    <div style="display: flex; width: 90%;">
+                        <img class="main-img" id="img-1"src="../imgs/exemplo-container.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2>Propriedades Relacionadas ao <strong>container</strong></h2>
+                <div class="textos">
+                    <ul style="columns: 2; width: 55vw; font-size: 20px;" id="tabela-com-propriedades">
+                        <li><p>Display</p></li>
+                        <li><p>flex-direction</p></li>
+                        <li><p>flex-wrap</p></li>
+                        <li><p>flex-flow</p></li>
+                        <li><p>justify-content</p></li>
+                        <li><p>aling-itens</p></li>
+                        <li><p>aling-contem</p></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h2>Propriedades Relacionadas aos <strong>itens</strong></h2>
+                <div class="textos">
+                    <ul style="columns: 2; width: 55vw; font-size: 20px;" id="tabela-com-propriedades">
+                        <li><p>flex-grow</p></li>
+                        <li><p>flex-bosis</p></li>
+                        <li><p>flex-shrink</p></li>
+                        <li><p>flex</p></li>
+                        <li><p>order</p></li>
+                        <li><p>aling-self</p></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h2 style="margin-bottom:20px;">O comportamento na prática</h2>
+
+                <div>
+                    <div id="container-example-1">
+                        <small>Container</small>
+                        <div class="flex-itens">HI <small>flex-itens</small></div>
+                        <div class="flex-itens">Hello <small>flex-itens</small></div>
+                        <div class="flex-itens">OI <small>flex-itens</small></div>
+                    </div>
+                    <input id="button-flex-container-example" type="button" value="Aplicar propriedade flex ao container" onclick="Tradeex1()">
+                    <script>
+                        function Tradeex1()
+                        {
+                            var mybutton = document.getElementById("button-flex-container-example")
+                            var container = document.getElementById("container-example-1")
+                            
+                            if(mybutton.value == "Aplicar propriedade flex ao container")
+                            {
+                                container.style.display = "flex";
+                                mybutton.value = "Remover a propriedade flex do container"
+                            }
+                            else
+                            {
+                                container.style.display = "block";
+                                mybutton.value = "Aplicar propriedade flex ao container"
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="textos">
+                    <p>
+                        Como pode se notar ao aplicar a propriedade <strong>display:flex</strong> ao container, ele muda a forma em que os items que estão dentro dele são organizados, indo de uma organização em coluna para uma em linha.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h2>Propriedade <strong>flex-direction</strong></h2>
+                <div style="margin-top: 20px;">
+                    <div id="container-example-2" style=" display: flex;border: 1px black solid;max-width: 700px;flex-direction: row;margin: auto; min-height: 140px;">
+                        <div class="flex-items-example-2" style="margin-inline: 10px;"><p>hi</p></div>
+                        <div class="flex-items-example-2" style="margin-inline: 10px;"><p>hello</p></div>
+                        <div class="flex-items-example-2" style="margin-inline: 10px;"><p>oi</p></div>
+                        <div class="flex-items-example-2" style="margin-inline: 10px;"><p>:)</p></div>
+                        <div class="flex-items-example-2" style="margin-inline: 10px;"><p>:3</p></div>
+                        <div class="flex-items-example-2" style="margin-inline: 10px;"><p>"_"</p></div>
+                    </div>
+                    <div style="display: flex;justify-content: center;height: 40px;margin-top: 20px;">
+                        <input style="margin-right: 10px; height: 30px;width: 100px;" type="button" value="Aplicar valor" onclick="AplicarPR()">
+                        <select style="height: 30px;"value="row" id="listagemdirection">
+                            <option value="row">row</option>
+                            <option value="row-reverse">row-reverse</option>
+                            <option value="column">column</option>
+                            <option value="column-reverse">column-reverse</option>
+                        </select>
+                    </div>
+                    <script>
+                        function AplicarPR()
+                        {
+                            var listagemdirection = document.getElementById("listagemdirection");
+                            var container = document.getElementById("container-example-2");
+                    
+                            container.style.flexDirection = listagemdirection.value;
+                        }
+                    </script>
+                </div>
+                <div class="textos">
+                    <p>Com a propriedade <strong>flex-direction</strong> nos podemos, mudar o comportamento dos flex-itens de se alinharem de forma "em linha" para uma forma de "coluna" ou até mesmo uma forma reversa de linha e coluna.</p>
+                    <p style="margin-top: 6px;">O reverse ele trabalha básicamente dizendo que a linha de onde deve se começar a aparecer os itens <strong>é</strong> na direita (no caso de se usar o row-reverse), e de baixo para cima (para o caso de seu usar o colun-reverse)</p>
+                    <p style="margin-top: 6px;">O valor padrão que vem é o <strong>flex-direction:<span style="border-bottom: 1px rgba(0, 0, 0, 0.332) solid;">row</span></strong></p>
+                </div>
+            </li>
+            <li>
+                <h2 style="margin-bottom: 20px;">Propriedade <strong>flex-wrap</strong></h2>
+                <div>
+                    <ul id="lista-exemplo-3" >
+                        <li class="itens-exemplo-3"></li>
+                        <li class="itens-exemplo-3"></li>
+                        <li class="itens-exemplo-3"></li>
+                    </ul>
+                    <div style="display: flex;justify-content: center;flex-wrap: wrap-reverse;">
+                        <input type="button" value="adicionar +1" onclick="Adicionar(1)">
+                        <input type="button" value="remover -1"onclick="Adicionar(-1)">
+                        <div style="width: 100%;">.</div>
+                        <input type="button" value="aplicar wrap" onclick="Trade('wrap')">
+                        <input type="button" value="aplicar nowrap" onclick="Trade('nowrap')">
+                        <input type="button" value="aplicar wrap-reverse" onclick="Trade('wrap-reverse')">
+                    </div>
+                    <script>
+                        var totalDeBlocos = 3;
+                        function Trade(state)
+                        {
+                            document.getElementById("lista-exemplo-3").style.flexWrap = state;
+                            
+                        }
+                        function Adicionar(numero)
+                        {
+                            if(numero > 0)
+                            {
+                                if(totalDeBlocos < 12)
+                                {
+                                    totalDeBlocos += numero 
+                                    var itensLista = document.createElement("li")
+                                    itensLista.className = "itens-exemplo-3"
+                                    var corpoLista = document.getElementById('lista-exemplo-3')
+            
+                                    corpoLista.insertBefore(itensLista,corpoLista[0])
+                                }
+                                else
+                                {
+                                    window.alert('Não ha necessidade de adicionar mais blocos ao conteiner.')
+                                }
+                            }
+                            if(numero < 0)
+                            {
+                                if(totalDeBlocos > 1)
+                                {
+                                    totalDeBlocos += numero 
+                                    var corpoLista = document.getElementById('lista-exemplo-3')
+                                    var ultimoItem = document.getElementsByClassName('itens-exemplo-3')[totalDeBlocos]
+                                    ultimoItem.remove();
+                                    
+                                }
+                                else
+                                {
+                                    window.alert('Não ha necessidade de remover mais blocos ao conteiner.')
+                                }
+                            }
+                            
+                        }
+                    </script>
+                </div>
+                <div class="textos">
+                    <p>
+                        Como se pode ver com a propriedade <strong>wrap</strong> nos podemos liberar a quebra de linha de dentro do containeir, ou não.Por padrão essa priedade já vem setada como <strong>nowrap</strong>
+                    </p>
+                    <p>Essa propriedade é bem simples de se entender tirando um pouco do wrap-reverse.O wrap-reverse ele funciona basicamente dizendo para que quando for ocorrer a quebra linha ela seja feita para cima e não para baixo.</p>
+                    <p>Uma coisa interessante da propriedade <strong>wrap-reverse</strong> é que se o container tiver um height expecificado fica bem claro o seu funcionamento, como é o caso do exemplo acima</p>
+                </div>
+            </li>
+            <li>
+                <h2>
+                    <strong>Flex-flow</strong>
+                </h2>
+                <small style="font-style: italic;">A mãozinha</small>
+                <div class="textos">
+                    <p>
+                        uma "mãozinha" ou shorthand é uma linha que faz o trabalho de juntar dois ou mais comandos em apenas uma linha, como o caso do <strong>flex-flow : &lt;flex-direction&gt; &lt;flex-wrap&gt;;<br></strong><small>eles não são separados por virgulas</small>
+                    </p>
+
+                </div>
+            </li>
+            <li>
+                <h2>
+                    <strong>justify-content :(flex-direction:"row")</strong>   
+                </h2>
+                <div>
+                    <div id="container-exemplo-4">
+                        <ul id="lista-exemplo-4">
+                            <li></li>
+                            <li></li>
+                            <li style="margin: 0;"></li>
+                        </ul>
+                        
+                    </div>
+                    <div id="teste-ex-4"style="display: flex;width: 100%;justify-content: center;margin-top: 20px; ">
+                        <input type="button" value="aplicar" onclick="Aplicarexemplo4()">
+                        <select id="ex-4"  value="flex-start" style="margin-left: 10px;height: 25px;">
+                            <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                            <option value="center">center</option>
+                            <option value="space-between">space-between</option>
+                            <option value="space-around">space-around</option>
+                        </select>
+                        <script>
+                            function Aplicarexemplo4()
+                            {
+                                var secao = document.getElementById("ex-4");
+                                document.getElementById("lista-exemplo-4").style.justifyContent = secao.value;
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="textos">
+                        <p>
+                            Essa propriedade faz um alinhamento dos itens de forma que se pode escolher a direção e ou tratar da distribuição desse elementos dentro do container.
+                        </p>
+                        <p>
+                            valores cabiveis
+                        </p>
+                        <ul style="margin-bottom: 7px;">
+                            <li>flex-start</li>
+                            <small>os itens serao flexionados para ao lado <strong>esquerdo</strong> do container;
+                            </small>
+                            <li>flex-end</li>
+                            <small>os itens serao flexionados para ao lado <strong>direito</strong> do container;
+                            </small>
+                            <li>center</li>
+                            <small>
+                                os itens serão flexionados para ao <strong>centro</strong> do container;
+                            </small>
+                            <li>space-between</li>
+                            <small>Cria um espaçamento <strong>igual</strong> entre os itens;
+                            </small>
+                            <li>space-around</li>
+                            <small>Os epaços entre os itens são o <strong>dobro</strong>.
+                            </small>
+                        </ul>
+                        <p>Essa propriedade vem setada como padrão <strong>flex-start</strong></p>
+
+                </div>
+            </li>
+            <li>
+                <h2><strong>justify-content :(flex-direction:"row")</strong></h2>
+                <div>
+                    <div id="container-exemplo-5">
+                        <ul id="lista-exemplo-5">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div id="teste-ex-4"style="display: flex;width: 100%;justify-content: center;margin-top: 20px; ">
+                        <input type="button" value="aplicar" onclick="Aplicarexemplo5()">
+                        <select id="ex-5"  value="flex-start" style="margin-left: 10px;height: 25px;">
+                            <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                            <option value="center">center</option>
+                            <option value="space-between">space-between</option>
+                            <option value="space-around">space-around</option>
+                        </select>
+                    </div>
+                    
+                        <script>
+                            function Aplicarexemplo5()
+                            {
+                                var secao = document.getElementById("ex-5");
+                                document.getElementById("lista-exemplo-5").style.justifyContent = secao.value;
+                            }
+                        </script>
+                        
+                    </div>
+                </div>
+                <div class="texto">
+                    <p>
+                        A unica diferença desse exemplo para o passado é que o <strong>flex-direction</strong>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h2><strong>flex-grow :</strong></h2>
+
+                <div class="textos">
+                    <p>O <strong>"flex-grow :"</strong> ele é usado para definir a procporção de um item ao container, ou seja, esse valor tem que ser setado nos itens e não no conteiner.</p>
+                    <p>Os valores que podem ser postos ao <strong>flex-grow</strong> são valores que variam do 0 a um numero maior.</p>
+                    <p><strong>obs:</strong> essa propriedade não funciona em conjunto ao justify-content.</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>''

@@ -1,0 +1,18 @@
+#lista-exemplo-3{
+    width: 700px;
+    height: 260px;
+    border: 1px solid black ;
+    margin :auto;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+#lista-exemplo-3 li{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background-color: red;
+    border: 1px black solid;
+    margin-left: 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container{
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .itens{
+            background-color: red;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            text-transform: uppercase;
+            
+        }
+        .bauto{
+            flex-basis: auto;
+        }
+        .fg{
+            flex-grow: 1;
+        }
+        .fg2{
+            flex-grow: 2;
+        }
+        .b0{
+            flex-basis: 0;
+        }
+        .fg1{
+            flex-grow:1;
+        }
+        .w100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>bases auto</p>
+    <div class="flex-container">
+        <div class="itens bauto fg" >-</div>
+        <div class="itens bauto fg">bbbbbbbb</div>
+        <div class="itens bauto fg">c</div>
+        <div class="itens bauto fg2">def</div>
+
+    </div>
+    <p>a</p>
+    <div class="flex-container">
+        <div class="itens b0 fg">aaaaaaaa</div>
+        <div class="itens b0 fg">b</div>
+        <div class="itens b0 fg">c</div>
+        <div class="itens b0 fg">d1'</div>
+    </div>
+    <p>com width</p>
+    <div class="flex-container">
+        <div class="itens w100">aaaaaa</div>
+        <div class="itens w100">b</div>
+        <div class="itens w100">c</div>
+        <div class="itens w100 fg1">d1'</div>
+    </div>
+</body>
+
+</html>

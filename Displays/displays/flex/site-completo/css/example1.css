@@ -1,0 +1,28 @@
+#container-example-1{
+    max-width: 700px;
+    height: 110px;
+    margin:auto;
+    padding: 8px;
+    border: 1px solid black;
+
+}
+.flex-itens{
+    background-color: rgb(107, 15, 164);
+    margin-bottom: 4px;
+    margin-right: 10px;
+}
+
+.flex-itens small,#container-example-1 small{
+    background-color: red;
+}
+#container-example-1 small{
+    height: 20px;
+}
+#button-flex-container-example{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 300px;
+    height: 30px;
+}

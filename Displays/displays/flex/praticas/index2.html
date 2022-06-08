@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            
+            height: 300px;
+            max-width: 300px;
+            
+            border: 1px black solid;
+        }
+        .item{
+            background-color: orange;
+
+            text-align: center;
+            padding: 0px 5px;
+            flex: 1;
+            color:white;
+            margin: 4px;
+        }
+        .streth{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h2>streth</h2>
+    <div class="container stretch">
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore lorem  asdasdsfsadfwsrfncoisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisas</div><div class="item">lore lorem coisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisas</div>
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore coisas</div>
+        <div class="item">lore lorem coisas asaodkjfvjsfobvjdfkh</div>
+    </div>
+    <h2>center</h2>
+    <div class="container center">
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore lorem  asdasdsfsadfwsrfncoisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisas</div><div class="item">lore lorem coisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisasdasd
+            dsadssfsdfasdasas</div>
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore coisas</div>
+        <div class="item">lore lorem coisas asaodkjfvjsfobvjdfkh</div>
+    </div>
+    <h2>Flex-start</h2>
+    <div class="container  flex-start">
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore lorem  asdasdsfsadfwsrfncoisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisas</div><div class="item">lore lorem coisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisasdasd
+            dsadssfsdfasdasas</div>
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore coisas</div>
+        <div class="item">lore lorem coisas asaodkjfvjsfobvjdfkh</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="container flex-end">
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore lorem  asdasdsfsadfwsrfncoisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisas</div><div class="item">lore lorem coisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisasdasd
+            dsadssfsdfasdasas</div>
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore coisas</div>
+        <div class="item">lore lorem coisas asaodkjfvjsfobvjdfkh</div>
+    </div>
+    <h2>space-around</h2>
+    <div class="container space-around">
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore lorem  asdasdsfsadfwsrfncoisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisas</div><div class="item">lore lorem coisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisasdasd
+            dsadssfsdfasdasas</div>
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore coisas</div>
+        <div class="item">lore lorem coisas asaodkjfvjsfobvjdfkh</div>
+    </div>
+    <h2>space-between</h2>
+    <div class="container space-between">
+        <div class="item">lore lorem  asdasdsfsadfwsrfncoisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisas</div><div class="item">lore lorem coisas coisas coisas coisas coisas</div>
+        <div class="item">lore coisasdasd
+            dsadssfsdfasdasas</div>
+        <div class="item">lore lorem coisas</div>
+        <div class="item">lore coisas</div>
+        <div class="item">lore lorem coisas asaodkjfvjsfobvjdfkh</div>
+    </div>
+</body>
+</html>

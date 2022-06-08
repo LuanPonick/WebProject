@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um pouco da minha vida</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        :root{
+            --font-p: 'Roboto', cursive;
+            --font-h1 : 'Dancing Script', cursive;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #total{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right,rgb(255, 255, 255) ,85% , rgb(202, 202, 202));
+        }
+        main{
+            position: relative;
+            display: inline-block;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        h1{
+            font-family: var(--font-h1);
+            font-weight: 300;
+            font-style: normal;
+            font-size: 45px;
+            margin-bottom: 6px;
+        }
+        p{
+            font-family: var(--font-p);
+            font-style: italic;
+            font-weight: 400;
+            font-size: 19px;
+        }
+        .divs{
+            max-width: 600px;
+            min-width: none;
+            margin-bottom: 12px;
+        }
+        aside {
+            position: relative;
+            top: 5%;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            height: 29px;
+        }
+        #aaa{
+            font-size: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="total">
+        <main>
+            <div class="divs" id="div-1">
+                <h1>Seu nome</h1>
+                <p>Ele chama-se Luan, nascido em 2003, nascido em Joinville e nunca saiu de lá.</p>
+            </div>
+            <div class="divs" id="div-2">
+                <h1>Onde e como conviveu</h1>
+                <p>
+                    Uma pessoa que passou até seus 16 anos se achando tão pequeno sem a vontade de mudar, achando que era ruim só por existir.Depois de anos com essa angústia decidiu mudar dali pra frente, e por ventura descobriu que sua paixão era inventar coisas que ajude as pessoas ou a si próprio com "arapucas" ou códigos.
+                    </p>
+            </div>
+            <div class="divs" id="div-3">
+                <h1>Como os códigos</h1>
+                <p>
+                    Tudo começou com uma dúvida que vinha desde pequeno de como os jogos funcionavam porque era muito incrível tentar entender.Depois de muito tempo ele decide tentar entender e descobre o mundo do desenvolvimento de jogos e acaba se apaixonando por códigos.</p>
+            </div>
+            <div class="divs" id="div-4">
+                <h1>Afinal quem é Luan</h1>
+                <p>
+                    Uma pessoa bem teimosa, com vontade de aprender muitas coisas indo muito além de tentar provar que consegue ser bom em alguma coisa para as outras pessoas e para si mesmo, estando muito mais ligado a simplesmente porque gosta de inventar coisas uteis e não tão uteis.</p>
+            </div>
+        </main>
+        <aside>
+        <p id="aaa">“Ser eu para mim ja foi uma tortura, hoje eu só me sinto feliz sendo eu“</p>
+    </aside>
+    
+    </div>
+    
+    
+</body>
+</html>
