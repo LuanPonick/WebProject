@@ -1,0 +1,25 @@
+header{
+    position: fixed;
+
+    height: var(--header-height);
+    width: 100%;
+
+    background-color: #4A4D6C;
+    padding: 26px;
+    top: 0;
+
+    border-bottom-right-radius: 70px;
+    z-index: 100;
+}
+header img{
+    width: 40px;
+}
+header nav,header ul{
+    height: 100%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
