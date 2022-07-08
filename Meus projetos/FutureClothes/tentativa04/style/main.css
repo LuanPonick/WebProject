@@ -17,7 +17,7 @@ main .main-backgroound{
     width: 100%;
 }
 main img{
-    width: 90px;
+    width: 70px;
     margin-left:30px ;
 }
 main nav {
@@ -27,7 +27,7 @@ main nav {
 main .container{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
 }
 main .container li a{
@@ -38,5 +38,5 @@ main .container li a{
 main a{
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }

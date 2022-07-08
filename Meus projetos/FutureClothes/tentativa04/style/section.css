@@ -1,11 +1,11 @@
-section#sobre-nos{
+#section-sobre-nos{
     margin-top: 20px;
-    height: 695px;
+    height: var(--section-sobre-nos-altura);
     width: 100%;
     position: absolute;
     z-index: 1;
 }
-section#sobre-nos img{
+#section-sobre-nos img{
     width: 70px;
 }
 .section-background{
@@ -21,7 +21,7 @@ section#sobre-nos img{
     height: 95%;
     transform: rotateY(180deg);
 }
-section#sobre-nos .back-1{
+#section-sobre-nos .back-1{
     width: 85%;
     height: 95%;
     background-color: #0000007c;
@@ -35,7 +35,7 @@ section#sobre-nos .back-1{
     border: 1px solid black;
     border-bottom-left-radius: 20px;
 }
-section#sobre-nos .elementos{
+#section-sobre-nos .elementos{
     z-index: 1;
     position: absolute;
     top: 0;
@@ -43,16 +43,16 @@ section#sobre-nos .elementos{
     margin-top: 15px;
 
 }
-section#sobre-nos .elementos img{
+#section-sobre-nos .elementos img{
     width: 10vw;
 }
-section#sobre-nos .elementos h2{
+#section-sobre-nos .elementos h2{
     color: white;
     margin-right: 10px;
     text-transform: capitalize;
     font-size: 4vw;
 }
-section#sobre-nos .elementos .title{
+#section-sobre-nos .elementos .title{
     display: flex;
     align-items: center;
     max-width: 390px;
@@ -81,6 +81,6 @@ section#sobre-nos .elementos .title{
     position: absolute;
     color: white;
     font-size: 3vw;
-    top:70%;
+    top:85%;
     margin-left: 10px;
 }
