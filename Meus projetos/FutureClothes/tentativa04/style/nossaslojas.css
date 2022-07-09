@@ -56,6 +56,7 @@
 }
 .botoes{
     height: 100%;
+    width: 40%;
 }
 .lojas-botao{
     width: 140px;
@@ -71,7 +72,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    right: 40px;
+    right: 30px;
     height: 100%;
     justify-content: space-evenly;
 }
