@@ -1,0 +1,26 @@
+header{
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(58, 0, 204, 0.165);
+    border-bottom-right-radius: 40px;
+    top: 0;
+}
+li a{
+    float: left;
+}
+header img{
+    width: 60px;
+}
+header nav ul{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-inline: 20px;
+}
+header nav{
+    height: 100%;
+}

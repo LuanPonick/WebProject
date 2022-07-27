@@ -1,0 +1,6 @@
+:root{
+    --header-anim-transition-delay: 0.1s;
+    --header-anim-transition-duration: 0.9s;
+    --header-height:35px;
+    --section-sobre-nos-altura:695px;
+}

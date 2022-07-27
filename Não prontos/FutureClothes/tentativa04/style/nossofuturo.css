@@ -1,0 +1,53 @@
+#section-nosso-futuro{
+    width: 100%;
+    height: 90vw;
+
+    margin-top: 40px;
+    background-color: #6C6D90;
+
+    position: relative;
+}
+#bot-side-image ,#top-side-image{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+}
+#top-side-image{
+    background-image: url('../imgs/mains/img5/mid/topside.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    top: 0;
+    right: 0;
+    
+}
+#bot-side-image{
+    background-image: url('../imgs/mains/img5/mid/botside.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    bottom: 0;
+    left: 0;
+}
+#section-nosso-futuro .conteudo{
+    position: absolute;
+    width: 98%;
+    text-align: center;
+    z-index: 2;
+    display: block;
+    margin-block: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.286);
+    border-radius: 20px;
+}
+#section-nosso-futuro .conteudo h3{
+    font-size: 6vw;
+}
+#section-nosso-futuro .conteudo p{
+    font-size: 5vw;
+}
+#section-nosso-futuro .conteudo img{
+    width: 15vw;
+}

@@ -1,0 +1,14 @@
+footer{
+    margin-top: 20px;
+    background-color: #6C6D90;   
+    height: 9vw;
+    font-size: 5vw;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+}
+footer p{
+    position: relative;
+    top: 50%;
+    transform:translateY(-50%);
+}

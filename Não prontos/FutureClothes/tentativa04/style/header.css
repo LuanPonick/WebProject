@@ -1,0 +1,34 @@
+header{
+    position: fixed;
+
+    height: var(--header-height);
+    width: 100%;
+
+    background-color: #4A4D6C;
+    padding: 20px;
+    top: 0;
+
+    border-bottom-right-radius: 30px;
+    z-index: 100;
+}
+header img{
+    width: 30px;
+}
+header nav,header ul{
+    height: 100%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#logo-header{
+    transition-duration: var(--header-anim-transition-duration);
+    transition-delay: var(--header-anim-transition-delay);
+}
+#logo-header:hover{
+    background-color: rgb(57, 103, 252);
+    border-radius: 50px; 
+    transition-delay: 0s;
+}

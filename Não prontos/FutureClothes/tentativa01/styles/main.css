@@ -1,0 +1,89 @@
+main{
+    position: relative;
+    top: 70px;
+    margin-top: 10px;
+    
+    padding-top: 4px;
+    width: 100%;
+    height: 580px;
+
+    background-color: red;
+
+    background-image: url(../imgs/mains/img1/mid.jpg);
+    background-position: center right;
+    opacity: 0.8;
+    background-size: cover;
+    box-sizing:content-box;
+}
+main h1{
+    text-transform: capitalize;
+    font-family: var(--main-font-first);
+    color: rgb(44, 13, 43);
+    font-style: italic;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.567);
+    width: 300px;
+    border-bottom-right-radius: 70px;
+}
+main ul{
+    display: flex;
+    height: 475px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-block: 80px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: var(main-font-second);
+    text-transform: capitalize;
+    font-size: 33px;
+}
+.main-conteudo{
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    transition-duration: var(--main-anim-transition-duration);
+    transition-delay:var(--main-anim-transition-delay);
+    flex-direction: row-reverse;
+    
+}
+#main-sobre-nos:hover{
+    opacity: 1;
+    transition-delay: 0s;
+    font-size: 50px;
+}
+#main-nossas-lojas:hover{
+    opacity: 1;
+    transition-delay: 0s;
+    font-size: 50px;
+}
+#main-planos-para-o-futuro:hover{
+    opacity: 1;
+    transition-delay: 0s;
+    font-size: 50px;
+
+}
+.main-conteudo > img{
+    transition-duration: var(--main-anim-transition-duration);
+}
+#main-sobre-nos:hover > img{
+    width: 100px;
+}
+#main-nossas-lojas:hover > img{
+    width: 100px;
+
+}
+#main-planos-para-o-futuro:hover > img{
+    width: 100px;
+}
+main img{
+    margin-inline: 15px;
+    width: 80px;
+}
+#teste{
+    margin-bottom: 20px;
+}

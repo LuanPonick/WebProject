@@ -1,0 +1,418 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+/*      Header      */
+:root{
+    --header-tempo-de-animacao-desktop:0.4s;
+    --header-height-destop:70px;
+    --header-height-mobile:50px;
+
+    --main-font-first : 'Italianno', cursive;
+    --main-font-secund: 'Prata', serif;
+
+    --main-duracao-animacao:1s;
+
+    --main-crecimento-botoes-mobile:70px;
+    --main-crecimento-botoes-desktop:100px;
+
+    --main--fonte-final-desktop:40px;
+    --main--fonte-final-mobile:20px;
+
+    --section-sobre-nos-height-desktop :90vw;
+    --section-sobre-nos-height-mobile :530px;
+}
+header{
+    position: fixed;
+    background-color: #4B4D6C;
+    height: var(--header-height-mobile);
+    border-bottom-right-radius:30px;
+    padding: 10px;
+    width: 100%;
+    top :0;
+    z-index: 1;
+}
+header img{
+    width: 40px ;
+    transition-property: background-color,border-radius;
+    transition-duration: 0.4s;
+}
+header img:hover{
+    background-color: rgb(32, 50, 120);
+    border-radius: 60px;
+    transition-duration: 1s;
+}
+header nav, header ul{
+    height: 100%;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-desktop{
+    display: none;
+
+}
+@media (min-width: 600px)
+{
+    header{
+        padding: 20px;
+        height: var(--header-height-destop);
+    }
+    header img{
+        width: 60px;
+    }
+    #menu-desktop{
+        display: flex;
+    }
+    #menu-desktop a{
+        color:white;
+        transition-property: color,font-size;
+        transition-duration: var(--header-tempo-de-animacao-desktop);
+    }
+    #menu-desktop-sobre-nos:hover a{
+        color:rgba(2, 0, 49, 0.703);
+        transition-duration: var(--header-tempo-de-animacao-desktop);
+        font-size: 24px;
+    }
+    #menu-desktop-nossas-lojas:hover a{
+        color:rgba(2, 0, 49, 0.703);
+        font-size: 24px;
+        transition-duration: var(--header-tempo-de-animacao-desktop);
+    }
+    #menu-desktop-nossos-planos:hover a{
+        color:rgba(2, 0, 49, 0.703);
+        font-size: 24px;
+        transition-duration: var(--header-tempo-de-animacao-desktop);
+        
+    }
+    #menu-desktop li{
+        margin-right: 15px;
+        font-size: 20px;
+        font-style: italic;
+    }
+    #menu-mobile{
+        display: none;
+    }
+}
+/*      MAIN        */
+main{
+    height: 500px;
+    width: 100%;
+    
+    margin-top:  calc(var(--header-height-mobile) + 10px);
+    
+    background-color: #3c07ea76;
+    background-image: url('../imgs/mains/img1/mid.jpg');
+    background-size: cover;
+    background-position: center right;
+}
+main div.title{
+    height:20%;
+    position: relative;
+}
+main h1{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.415);
+    padding: 10px;
+    border-radius:0px 20px 20px 0px ;
+    box-sizing: content-box;
+    font-family: var(--main-font-first);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+main div.botoes{
+    height: 79%;
+}
+main nav{
+    height: 100%;
+}
+main ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+main a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 5vw;
+}
+main img{
+    width:60px;
+}
+main a p{
+    margin-right: 20px;
+}
+
+main #mais-sobre-nos a{
+    transition-duration: var(--main-duracao-animacao);
+}
+main #mais-sobre-nos a:hover{
+    font-size: var(--main--fonte-final-mobile);
+    transition-duration: var(--main-duracao-animacao);
+}
+main #mais-sobre-nos img{
+    transition-duration: var(--main-duracao-animacao);
+}
+main #mais-sobre-nos img:hover{
+    width: var(--main-crecimento-botoes-mobile);
+    transition-duration: var(--main-duracao-animacao);
+}
+main #nossas-lojas a{
+    transition-duration: var(--main-duracao-animacao);
+}
+main #nossas-lojas a:hover{
+    font-size: var(--main--fonte-final-mobile);
+    transition-duration: var(--main-duracao-animacao);
+}
+main #nossas-lojas img{
+    transition-duration: var(--main-duracao-animacao);
+}
+main #nossas-lojas img:hover{
+    width: var(--main-crecimento-botoes-mobile);
+    transition-duration: var(--main-duracao-animacao);
+}
+main #nossos-planos-de-futuro a{
+    transition-duration: var(--main-duracao-animacao);
+}
+main #nossos-planos-de-futuro a:hover{
+    font-size: var(--main--fonte-final-mobile);
+    transition-duration: var(--main-duracao-animacao);
+}
+main #nossos-planos-de-futuro img{
+    transition-duration: var(--main-duracao-animacao);
+}
+main #nossos-planos-de-futuro img:hover{
+    width: var(--main-crecimento-botoes-mobile);
+    transition-duration: var(--main-duracao-animacao);
+}
+@media (min-width: 600px) {
+    main{
+        background-position: top 20% left;
+        margin-top:  calc(var(--header-height-destop) + 20px);
+        height: 780px;
+    }
+    main h1{
+        font-size: 6vw;
+        top: 10vw;
+        padding-right: 200px;
+    }
+    main img{
+        width: 80px;
+    }
+    main a{
+        font-size: 30px;
+    }
+    main #mais-sobre-nos a{
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #mais-sobre-nos a:hover{
+        font-size: var(--main--fonte-final-desktop);
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #mais-sobre-nos img{
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #mais-sobre-nos img:hover{
+        width: var(--main-crecimento-botoes-desktop);
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #nossas-lojas a{
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #nossas-lojas a:hover{
+        font-size: var(--main--fonte-final-desktop);
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #nossas-lojas img{
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #nossas-lojas img:hover{
+        width: var(--main-crecimento-botoes-desktop);
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #nossos-planos-de-futuro a{
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #nossos-planos-de-futuro a:hover{
+        font-size: var(--main--fonte-final-desktop);
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #nossos-planos-de-futuro img{
+        transition-duration: var(--main-duracao-animacao);
+    }
+    main #nossos-planos-de-futuro img:hover{
+        width: var(--main-crecimento-botoes-desktop);
+        transition-duration: var(--main-duracao-animacao);
+    }
+}
+
+
+/*      section-mais-sobre-nos       */
+
+
+#section-mais-sobre-nos{
+    position: absolute;
+    height: var(--section-sobre-nos-height-mobile);
+    width: 100%;
+    margin-top: 20px;
+}
+#section-mais-sobre-nos .background-1,#section-mais-sobre-nos .background-2{
+    background-color: #151c4273;
+    width: 90%;
+    height: 94%;
+    position: absolute;
+    border: 1px solid black;
+}
+#section-mais-sobre-nos .background-3{
+    height: 98%;
+    width: 90%;
+    background-image: url('../imgs/mains/img2/mid.jpg');
+    background-size: 200%;
+    background-position: center top 35%;
+    transform: rotateY(180deg);
+
+}
+#section-mais-sobre-nos .title{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 30%;
+    top: 3%;
+}
+#section-mais-sobre-nos .title h2{
+    color: white;
+    margin-right:10px;
+    font-size: 5vw;
+}
+#section-mais-sobre-nos .title img{
+    width: 10vw;
+}
+#section-mais-sobre-nos .text{
+    width: 75%;
+    position: absolute;
+    font-size: 16px;
+    text-align: right;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.316);
+    right: 0;
+    border-radius: 20px 0 0 20px;
+    top: 20%;
+    padding: 20px 10px;
+}
+#section-mais-sobre-nos .footer{
+    position: absolute;
+    top: 75%;
+    color: white;
+    font-size: 4.9vw;
+}
+@media (min-width:600px) 
+{
+
+    #section-mais-sobre-nos{
+        height: var(--section-sobre-nos-height-desktop);
+    }    
+    #section-mais-sobre-nos .background-1{
+        width: 85%;
+        height: 100%;
+    }
+    #section-mais-sobre-nos .background-2{
+        width: 93%;
+        height: 94%;
+    }
+    #section-mais-sobre-nos .background-3{
+        width: 80%;
+        background-size: cover;
+        background-position: top 500px;
+    }
+    #section-mais-sobre-nos .title{
+        left: 37%;
+    }
+    #section-mais-sobre-nos .title h2{
+        color: white;
+        margin-right:10px;
+        font-size: 3vw;
+    }
+    #section-mais-sobre-nos .title img{
+        width: 5vw;
+    }
+    #section-mais-sobre-nos .text{
+        left: 60vw;
+        border-radius: 20px;
+        top :30%;
+        font-size: 3vw;
+        max-width: 40vw;
+        transform: translate(-50%,-50%);
+    }
+    #section-mais-sobre-nos .footer{
+        font-size: 2vw;
+        top: 65%;
+    }
+}
+/*      Sectio#nossas-lojas     */
+section#nossas-lojas{
+    margin-top: calc(var(--section-sobre-nos-height-mobile) + 20px);
+    height: 550px;
+    background-color: red;
+}
+section#nossas-lojas .background-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+}
+section#nossas-lojas img{
+    width: 10vw;
+    margin-bottom: 10px;
+}
+section#nossas-lojas p{
+    background-color: rgba(0, 0, 0, 0.268);
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 5.5vw;
+    width: 100%;
+}
+section#nossas-lojas .header{
+    height: 40%;
+    background-color: #4B4D6C;
+    background-image: url('../imgs/mains/img3/mid.jpg');
+    background-size: cover;
+    background-position: center bottom 80%;
+
+}
+section#nossas-lojas .main{
+    height: 60%;
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+}
+section#nossas-lojas .background-2{
+    width: 60%;
+    height: 60%;
+    background-color: pink;
+    
+}
+section#nossas-lojas .lojas-botoes{
+    display: flex;
+    align-items: center;
+}
+.container{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:600px){
+    section#nossas-lojas{
+        margin-top: calc(var(--section-sobre-nos-height-desktop) + 60px);
+    }
+}
