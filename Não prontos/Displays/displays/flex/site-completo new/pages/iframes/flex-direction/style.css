@@ -5,6 +5,7 @@
     flex-direction: row;
     margin: auto;
     min-height: 140px;
+    height: 302px;
 }
 
 .flex-items-example-2 {

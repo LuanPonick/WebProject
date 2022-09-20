@@ -26,7 +26,8 @@
         <hr>
         <section>
             <h2>Utilidade</h2>
-            <p>O flex é usado para fazer layouts unidimencionais, sendo um metodo que oferece uma distribuição de <strong> espaço entre itens</strong> em uma interface e <strong>recursos de alinhamento</strong>
+            <p>O flex é usado para fazer layouts unidimencionais, sendo um metodo que oferece uma distribuição de
+                <strong> espaço entre itens</strong> em uma interface e <strong>recursos de alinhamento</strong>
             </p>
             <img src="../imgs/exemplo-container.png" alt="">
         </section>
@@ -40,16 +41,16 @@
         <section class="propriedades-relacionadas">
             <h2>Propriedades Relacionadas Ao <strong>Container</strong></h2>
             <ul>
-                <li>Display</li>
-                <li>flex-direction</li>
-                <li>flex-wrap</li>
-                <li>flex-flow</li>
-                <li>justify-content</li>
+                <li><a href="#display-conteudo">Display</a></li>
+                <li><a href="#flex-direction-conteudo">flex-direction</a></li>
+                <li><a href="#flex-wrap-conteudo">flex-wrap</a></li>
+                <li><a href="#flex-flow-conteudo">flex-flow</a></li>
+                <li><a href="#justify-content-conteudo">justify-content</a></li>
                 <li>aling-itens</li>
                 <li>aling-contem</li>
             </ul>
         </section>
-        <section class="propriedades-relacionadas">
+        <section id="display-conteudo" class="propriedades-relacionadas">
             <h2>Propriedades Relacionadas Aos Itens</h2>
             <ul>
                 <li>flex-grow</li>
@@ -69,7 +70,7 @@
                 em que os items que estão dentro dele são organizados, indo de uma organização em coluna para uma em
                 linha.</p>
         </section>
-        <section>
+        <section id="flex-direction-conteudo">
             <h2>Propriedade Flex-Direction</h2>
             <iframe id="propriedade-flex-direction" src="iframes/flex-direction/Propriedade-Flex-Direction.html"
                 frameborder="0" scrolling="no"></iframe>
@@ -80,13 +81,26 @@
                 direita (no caso de se usar o row-reverse), e de baixo para cima (para o caso de seu usar o
                 colun-reverse)
             </p>
-            <small>O valor padrão que vem é o flex-direction:row
+            <small><i>obs:1</i> O valor padrão que vem é o <strong>flex-direction:row</strong>
             </small>
         </section>
-        <section>
+        <section id="flex-wrap-conteudi">
             <h2>Propriedade flex-Wrap</h2>
             <iframe id="propriedade-flex-wrap" src="iframes/flex-wrap/index.html" frameborder="0"
                 scrolling="no"></iframe>
+            <p>
+                Como se pode ver com a propriedade wrap nos podemos liberar a quebra de linha de dentro do <strong>containeir</strong>,
+                ou não.Por padrão essa propriedade já vem setada como <strong>nowrap</strong>
+
+                Essa propriedade é bem simples de se entender tirando um pouco do wrap-reverse.O wrap-reverse ele
+                funciona basicamente dizendo para que quando <strong>for ocorrer</strong> a <strong>quebra linha</strong> ela seja feita para <strong>cima</strong> e não
+                para baixo.
+
+                Uma coisa interessante da propriedade wrap-reverse é que se o container tiver um height expecificado
+                fica bem claro o seu funcionamento, como é o caso do exemplo acima
+
+
+            </p>
         </section>
         <section>
             <h2>Flex-Flow</h2>
@@ -97,7 +111,7 @@
                 são separados por virgulas.
             </p>
         </section>
-        <section>
+        <section id="justify-content-conteudo">
             <h2>Justify-content</h2>
             <iframe id="justify-content" scrolling="no" src="iframes/justify-contant/index.html"
                 frameborder="0"></iframe>
@@ -131,10 +145,11 @@
             <h2>Justify-Content :(Flex-Direction:"Row")</h2>
             <iframe scrolling="no" id="justify-containt-flex-direction-row"
                 src="iframes/justify-containt-flex-direction-row/index.html" frameborder="0"></iframe>
-            <small>A unica diferença desse exemplo para o passado é que o <stron>flex-direction</stron></small>
+            <small>A unica diferença desse exemplo para o passado é que o <strong>flex-direction</strong> esta setado como "row".</small>
         </section>
         <section>
             <h2>Flex-grow</h2>
+            <iframe src="iframes/em-trabalho/emtrabalho.html" frameborder="0" class="em-trabalho"></iframe>
             <p>O <strong>"flex-grow :"</strong> ele é usado para definir a procporção de um item ao container, ou seja,
                 esse valor tem que ser setado nos itens e não no conteiner.
 
@@ -145,7 +160,7 @@
             </p>
         </section>
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

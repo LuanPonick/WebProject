@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-inline: auto;
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        #nomnom {
+            float: left;
+            position: relative;
+            top: calc(100% - 200px);
+            left: 25%;
+            width: 300px;
+            transform: scaleX(-1);
+            transform: translateX(-50%);
+            rotate: 20deg;
+            z-index: 1;
+        }
+
+        h2 {
+            position: absolute;
+            top: 18%;
+            left: 50%;
+            transform: translateX(-50%);
+            rotate: -10deg;
+            font-family: serif;
+            text-transform: capitalize;
+            z-index: 3;
+            color: red;
+        }
+
+        .faixas {
+            position: relative;
+            left: -18%;
+            top: -98%;
+            width: 564px;
+            z-index: 1;
+            float: left;
+        }
+
+        #faixa1 {
+            rotate: 36deg;
+        }
+
+        #faixa2 {
+            rotate: -36deg;
+            top: -193%;
+            z-index: 0;
+        }
+
+        #martelo {
+            display: block;
+            position: absolute;
+            top: 10%;
+            width: 100px;
+            left: 23%;
+            transform: scaleX(-1);
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <img id="nomnom" src="../../../imgs/derp-nomnom.png" alt="">
+        <h2>em trabalho</h2>
+        <img id="faixa1" class="faixas" src="../../../imgs/faixaamarelapreta.png" alt="">
+        <img id="faixa2" class="faixas" src="../../../imgs/faixaamarelapreta.png" alt="">
+
+    </div>
+</body>
+
+</html>
