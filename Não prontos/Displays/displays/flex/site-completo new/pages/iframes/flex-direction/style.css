@@ -1,0 +1,19 @@
+#container-example-2 {
+    display: flex;
+    border: 1px black solid;
+    max-width: 700px;
+    flex-direction: row;
+    margin: auto;
+    min-height: 140px;
+}
+
+.flex-items-example-2 {
+    margin-inline: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-top: 20px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Display Flex</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <dl>
+                <dt><a href=""><strong>redes-sociais</strong></a></dt>
+                <dd><a href="">linkedin</a></dd>
+                <dd><a href="">git-hub</a></dd>
+            </dl>
+            <img src="../imgs/minha-assinatura.png" alt="assinatura-luan">
+        </nav>
+    </header>
+    <main>
+        <h1><i>Propriedade flex</i></h1>
+        <hr>
+        <section>
+            <h2>Utilidade</h2>
+            <p>O flex é usado para fazer layouts unidimencionais, sendo um metodo que oferece uma distribuição de <strong> espaço entre itens</strong> em uma interface e <strong>recursos de alinhamento</strong>
+            </p>
+            <img src="../imgs/exemplo-container.png" alt="">
+        </section>
+        <section>
+            <h2>Container e flex itens</h2>
+            <p>Container E Flex Itens
+                Antes de mais nada, o container nada mais é do que uma div,span,h2,h3 ou algum elemento que sirva para
+                "conter" outros elementos.E quando é usado a propriedade flex block, nesse container, os elementos que
+                estão dentro dele viram flex itens.</p>
+        </section>
+        <section class="propriedades-relacionadas">
+            <h2>Propriedades Relacionadas Ao <strong>Container</strong></h2>
+            <ul>
+                <li>Display</li>
+                <li>flex-direction</li>
+                <li>flex-wrap</li>
+                <li>flex-flow</li>
+                <li>justify-content</li>
+                <li>aling-itens</li>
+                <li>aling-contem</li>
+            </ul>
+        </section>
+        <section class="propriedades-relacionadas">
+            <h2>Propriedades Relacionadas Aos Itens</h2>
+            <ul>
+                <li>flex-grow</li>
+                <li>flex-bosis</li>
+                <li>flex-shrink</li>
+                <li>flex</li>
+                <li>order</li>
+                <li>aling-self</li>
+            </ul>
+        </section>
+        <section>
+            <h2>O comportamento na prática</h2>
+            <iframe id="comportamento-na-pratica" src="iframes/comportamento/ComportamentoNaPratica.html"
+                frameborder="0" scrolling="no">
+            </iframe>
+            <p>Como pode se notar ao aplicar a propriedade <strong>display:flex</strong> ao container, ele muda a forma
+                em que os items que estão dentro dele são organizados, indo de uma organização em coluna para uma em
+                linha.</p>
+        </section>
+        <section>
+            <h2>Propriedade Flex-Direction</h2>
+            <iframe id="propriedade-flex-direction" src="iframes/flex-direction/Propriedade-Flex-Direction.html"
+                frameborder="0" scrolling="no"></iframe>
+            <p>Com a propriedade <strong>flex-direction</strong> nos podemos, mudar o comportamento dos flex-itens de se
+                alinharem de forma "em linha" para uma forma de "coluna" ou até mesmo uma forma reversa de linha e
+                coluna.</p>
+            <p>O reverse ele trabalha básicamente dizendo que a linha de onde deve se começar a aparecer os itens é na
+                direita (no caso de se usar o row-reverse), e de baixo para cima (para o caso de seu usar o
+                colun-reverse)
+            </p>
+            <small>O valor padrão que vem é o flex-direction:row
+            </small>
+        </section>
+        <section>
+            <h2>Propriedade flex-Wrap</h2>
+            <iframe id="propriedade-flex-wrap" src="iframes/flex-wrap/index.html" frameborder="0"
+                scrolling="no"></iframe>
+        </section>
+        <section>
+            <h2>Flex-Flow</h2>
+            <small>A mãozinha</small>
+            <p>
+                uma "mãozinha" ou shorthand é uma linha que faz o trabalho de juntar dois ou mais comandos em apenas uma
+                linha, como o caso do <strong>flex-flow : &lt;flex-direction&gt; &lt;flex-wrap&gt;</strong>. eles não
+                são separados por virgulas.
+            </p>
+        </section>
+        <section>
+            <h2>Justify-content</h2>
+            <iframe id="justify-content" scrolling="no" src="iframes/justify-contant/index.html"
+                frameborder="0"></iframe>
+            <p>Essa propriedade faz um alinhamento dos itens de forma que se pode escolher a direção e ou tratar da
+                distribuição desse elementos dentro do container.valores cabiveis</p>
+            <dl>
+                <dt>flex-start</dd>
+                <dd>
+                    os itens serao flexionados para ao lado esquerdo do container;
+                    </dt>
+                <dt>flex-end</dt>
+                <dd>
+                    os itens serao flexionados para ao lado direito do container;
+                </dd>
+                <dt>
+                    center
+                </dt>
+                <dd>
+                    os itens serão flexionados para ao centro do container;
+                </dd>
+                <dt>space-between</dt>
+                <dd>
+                    Cria um espaçamento igual entre os itens;
+                </dd>
+                <dt>space-around</dt>
+                <dd>Os epaços entre os itens são o dobro.</dd>
+            </dl>
+            <small>Essa propriedade vem setada como padrão flex-start</small>
+        </section>
+        <section>
+            <h2>Justify-Content :(Flex-Direction:"Row")</h2>
+            <iframe scrolling="no" id="justify-containt-flex-direction-row"
+                src="iframes/justify-containt-flex-direction-row/index.html" frameborder="0"></iframe>
+            <small>A unica diferença desse exemplo para o passado é que o <stron>flex-direction</stron></small>
+        </section>
+        <section>
+            <h2>Flex-grow</h2>
+            <p>O <strong>"flex-grow :"</strong> ele é usado para definir a procporção de um item ao container, ou seja,
+                esse valor tem que ser setado nos itens e não no conteiner.
+
+                Os valores que podem ser postos ao <strong>flex-grow</strong> são valores que variam do 0 a um numero
+                maior.
+
+                <stron>obs:</stron> essa propriedade não funciona em conjunto ao justify-content.
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>

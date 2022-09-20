@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="lista-exemplo-3" >
+            <li class="itens-exemplo-3"></li>
+            <li class="itens-exemplo-3"></li>
+            <li class="itens-exemplo-3"></li>
+        </ul>
+        <div style="display: flex;justify-content: center;flex-wrap: wrap-reverse;">
+            <input type="button" value="adicionar +1" onclick="Adicionar(1)">
+            <input type="button" value="remover -1"onclick="Adicionar(-1)">
+            <div style="width: 100%;"></div>
+            <input type="button" value="aplicar wrap" onclick="Trade('wrap')">
+            <input type="button" value="aplicar nowrap" onclick="Trade('nowrap')">
+            <input type="button" value="aplicar wrap-reverse" onclick="Trade('wrap-reverse')">
+        </div>
+    </div>
+    <script src="blocos.js"></script>
+    
+</body>
+</html>

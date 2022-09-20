@@ -1,0 +1,167 @@
+:root{
+    --background-color-principal:rgba(226, 226, 226, 0.822);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-image: url('../imgs/space.gif');
+    background-size: 100%;
+}
+strong{
+    color: rgba(46, 155, 46, 0.849);
+    font-weight: bold;
+    text-shadow: -1px 1px 3px #00000038;
+    text-transform: capitalize;
+}
+
+li{
+    list-style: inherit;
+}
+header img{
+    width: 100%;
+}
+main img{
+    width: 70%;
+    display: block;
+    margin-inline:auto ;
+    margin-bottom: -4%;
+}
+main dt::before{
+    content: '❖ ';
+}
+
+main dt{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+main dd{
+    text-indent: 5%;
+    font-size: 1.1em;
+}
+header {
+    position: fixed;
+
+    left: 80%;
+    top: 2%;
+
+    padding-inline: 3%;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+
+    background-color: var(--background-color-principal);
+    border-radius: 20px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header dl{
+    white-space: nowrap;
+    font-size: 90%;
+}
+header img{
+    width: 100px;
+}
+
+main{
+    width: 73%;
+    
+    padding-inline: 2%;
+
+    margin-top: 1%;
+    margin-left: 10px;
+
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+
+    background-color: var(--background-color-principal);
+    
+}
+main h1{
+    font-size: 3.0em;
+}
+main h2::before{
+    margin-right: 5px;
+    content: '♠';
+}
+main h2{
+    font-size: 2em;
+    margin-top: 10px;
+}
+main p{
+    text-indent: 5%;
+    font-size: 1.2em;
+}
+.propriedades-relacionadas ul{
+    columns: 2;
+    list-style: square;
+    margin-left: 20px;   
+    font-size: 1.2em;
+}
+#comportamento-na-pratica{
+    width: 100%;
+    height: 190px;
+    
+}
+#propriedade-flex-direction{
+    width: 100%;
+    height: 220px;
+}
+#propriedade-flex-wrap{
+    width: 100%;
+    height: 350px;
+}
+#justify-content{
+    width: 100%;
+    height: 250px;
+}
+#justify-containt-flex-direction-row{
+    width: 100%;
+    height: 470px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
+
+
+
+@media (max-width:1300px) {
+    header{
+        left: 75.3%;
+    }
+    main{
+        width: 70%;
+    }
+}
+@media (max-width:820px) {
+    header{
+        position: static;
+        width: 90%;
+        margin-inline: auto;
+        margin-top: 2px;
+    }
+    nav{
+        justify-content: space-between;
+    }
+
+    main{
+        padding-inline: 3%;
+        width: 90%;
+        margin-top: 2px;
+    }
+    main h1{
+        font-size: 2em;
+    }
+    main h2{
+        font-size: 1.6em;
+    }
+    main p{
+        font-size: 1.1em;
+    }
+}

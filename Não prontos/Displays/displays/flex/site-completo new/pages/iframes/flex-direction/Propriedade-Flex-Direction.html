@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main style="margin-top: 20px;">
+        <div id="container-example-2" style="">
+            <div class="flex-items-example-2"><p>hi</p></div>
+            <div class="flex-items-example-2"><p>hello</p></div>
+            <div class="flex-items-example-2"><p>oi</p></div>
+            <div class="flex-items-example-2"><p>:)</p></div>
+            <div class="flex-items-example-2"><p>:3</p></div>
+            <div class="flex-items-example-2"><p>"_"</p></div>
+        </div>
+        <nav>
+            <input style="margin-right: 10px; height: 30px;width: 100px;" type="button" value="Aplicar valor" onclick="AplicarPR()">
+            <select style="height: 30px;"value="row" id="listagemdirection">
+                <option value="row">row</option>
+                <option value="row-reverse">row-reverse</option>
+                <option value="column">column</option>
+                <option value="column-reverse">column-reverse</option>
+            </select>
+        </nav>
+        <script>
+            function AplicarPR()
+            {
+                var listagemdirection = document.getElementById("listagemdirection");
+                var container = document.getElementById("container-example-2");
+        
+                container.style.flexDirection = listagemdirection.value;
+            }
+        </script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div id="container-example-1">
+            <small>Container</small>
+            <div class="flex-itens">HI <small>flex-itens</small></div>
+            <div class="flex-itens">Hello <small>flex-itens</small></div>
+            <div class="flex-itens">OI <small>flex-itens</small></div>
+        </div>
+        <input id="button-flex-container-example" type="button" value="Aplicar propriedade flex ao container" onclick="Tradeex1()">
+        <script>
+            function Tradeex1()
+            {
+                var mybutton = document.getElementById("button-flex-container-example")
+                var container = document.getElementById("container-example-1")
+                
+                if(mybutton.value == "Aplicar propriedade flex ao container")
+                {
+                    container.style.display = "flex";
+                    mybutton.value = "Remover a propriedade flex do container"
+                }
+                else
+                {
+                    container.style.display = "block";
+                    mybutton.value = "Aplicar propriedade flex ao container"
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
