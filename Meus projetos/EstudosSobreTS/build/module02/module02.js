@@ -10,7 +10,7 @@ let s;
 let empety = "";
 let abc = 'abc';
 let nome = "Luan";
-let apresentacao = "olá me chamo";
+let apresentacao = "Olá me chamo";
 let frazeCompleta = `${apresentacao} ${nome}`;
 console.error("as variaveis `flag` `number` `s` não é possível de mostrar por ela nao ser definida na sua inicialização");
 console.log("\n");
