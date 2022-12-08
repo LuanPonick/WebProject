@@ -1,0 +1,10 @@
+.form-header{
+    font-size: 38px;
+    text-align: center;
+}
+#cadastrar{
+    margin-inline: auto;
+}   
+.red{
+    background-color: red;
+}

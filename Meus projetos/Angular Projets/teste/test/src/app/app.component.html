@@ -1,0 +1,50 @@
+<div class="po-wrapper">
+
+  <po-toolbar p-title="Cadastro"></po-toolbar>
+  
+  <po-menu [p-menus]="menus"></po-menu>
+
+  <po-page-default p-title="teste">
+
+    <po-container>
+      <form>
+        <h2 class="form-header">Digite seus dados para o cadastro </h2>
+        <hr>
+        <div class="po-row">
+          <po-input class="po-md-6" name="input" p-label="Nome" p-placeholder="Nome"
+            p-help="O seu nome é como os outros contribuentes vão te ver"> </po-input>
+          <po-input class="po-md-6" name="input" p-label="UserID" p-placeholder="UserID"
+            p-help="O seu UserID é so uma forma de você logar caso nao queria usar o email"> </po-input>
+        </div>
+        <div class="po-row">
+          <po-input class="po-md-12" name="input" p-label="Email" p-placeholder="Email"></po-input>
+        </div>
+        <div class="po-row">
+          <po-radio-group class="po-md-5" name="radioGroupBasic" p-label="Seu Genero Biológico" [p-options]="[
+            { label: 'Masculino', value: '1' },
+            { label: 'Feminino', value: '2' }
+          ]">
+          </po-radio-group>
+        <div class="po-row">
+          <po-checkbox-group class="po-md-6" [p-columns]="3" name="checkboxGroup" p-label="SLA" [p-options]="[
+          { value: '1', label: 'Option 1' },
+          { value: '2', label: 'Option 2' },
+          { value: '3', label: 'Option 1' },
+          { value: '4', label: 'Option 2' },
+          { value: '5', label: 'Option 2' },
+          { value: '6', label: 'Option 1' }
+          ]">
+          </po-checkbox-group>
+        </div>
+        <div class="po-row">
+          <po-button id="cadastrar" class="po-md-5" p-kind="primary" p-label="Cadastrar"> </po-button>
+        </div>
+        <div class="po-row">
+          <po-link class="po-md-12" style="text-align: center;" p-label="Já possue cadastro?" p-url="github.com/LuanPonick" [p-open-new-tab]="true"></po-link>
+        </div>
+        
+      </div>
+      </form>
+    </po-container>
+  </po-page-default>
+</div>
