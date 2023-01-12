@@ -1,0 +1,19 @@
+.header{
+    width: 90%;
+    margin-inline: auto;
+}
+.orcamento-main{
+    width: 40%;
+}
+.orcamento-main>*{
+    margin-block: 15px;
+}
+.center{ 
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+#formulario-criar{
+    align-items: center;
+}

@@ -4,10 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PoModule } from '@po-ui/ng-components';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { PoButtonModule } from '@po-ui/ng-components';
-import { PoContainerModule } from '@po-ui/ng-components';
-import { PoMenuPanelModule } from '@po-ui/ng-components';
+import { PoFieldModule } from '@po-ui/ng-components';
+import { PoDynamicModule } from '@po-ui/ng-components';
 
 
 @NgModule({
@@ -18,10 +19,12 @@ import { PoMenuPanelModule } from '@po-ui/ng-components';
     BrowserModule,
     AppRoutingModule,
     PoModule,
-    RouterModule.forRoot([]),
+    HttpClientModule,
     PoButtonModule,
-    PoContainerModule,
-    PoMenuPanelModule
+    PoFieldModule,
+    PoDynamicModule,
+    
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]

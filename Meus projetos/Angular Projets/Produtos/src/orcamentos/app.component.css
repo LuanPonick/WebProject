@@ -1,0 +1,16 @@
+.header{
+    width: 90%;
+    margin-inline: auto;
+}
+.orcamento-main{
+    width: 40%;
+}
+.main>*{
+    margin-block: 15px;
+}
+.center{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
