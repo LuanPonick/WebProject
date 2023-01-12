@@ -12,6 +12,8 @@ se houver algum problema você pode me comunicar de maneira mais emergente no me
 >>### WebProject/Tutoriais prontos/Grid x flexbox/pages/
 >>Aqui você ira encontrar varios arquivos sobre quando usar display grid ou flex-box
 
+---
+
 >## Projetos não prontos mas interesantes
 >>### WebProject/Não prontos/Displays/displays/
 >>Aqui explicação de como funciona e quando usar cada display.
@@ -32,3 +34,7 @@ se houver algum problema você pode me comunicar de maneira mais emergente no me
 >> Aqui você ira encontrar um arquivo bem grando relacionado com um resumo do primeiro módulo de um curso de typescript ele ainda não esta 100% completo mas algum dia eu espero terminar esse modulo e depois o curso todo.
 >>WebProject/Meus projetos/Angular Projects
 >> Aqui tem algun projetos de testes relacionados aos meus estudos de PO-UI não tenho nenhum arquivo explicado sobre porque eu ainda não entendo muita coisa.
+
+---
+
+Esses sao apenas lguns dos meu projetos, sintase livre para explorar esse repositorio 👍
