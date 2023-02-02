@@ -10,7 +10,7 @@ se houver algum problema você pode me comunicar de maneira mais emergente no me
 >>### WebProject/Tutoriais prontos/EntendendoGrid/
 >>Aqui você ira encontrar um arquivo md explicando de forma detalhada sobre grid com exemplos online caso queira acomponhar junto ao texto.
 >>### WebProject/Tutoriais prontos/Grid x flexbox/pages/
->>Aqui você ira encontrar varios arquivos sobre quando usar display grid ou flex-box
+>>Aqui você ira encontrar varios arquivos sobre quando usar display grid ou flex-box.
 
 ---
 
