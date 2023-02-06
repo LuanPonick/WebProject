@@ -33,5 +33,11 @@
 >>---
 >
 >># Filter
->> serve para remover itens indesejados 
+>> serve para remover itens com determinadas condições sintaxe
+>> ~~~JavaScript
+>> nomearray.filter((arraynametemp) => arraynametemp == X)
+>> ~~~
+>>A ideia base é basicamente essa. A **ULTIMA** variavel criada no filter(nesse caso o _arraynametemp_ ) ele é o array _nomearray_.
+>>
+>>---
 >---
