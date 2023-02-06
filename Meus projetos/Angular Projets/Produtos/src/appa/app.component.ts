@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 
 import { PoMenuItem } from '@po-ui/ng-components';
 
+
 @Component({
-  selector: 'app-root',
+  selector: 'app-root2',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

@@ -3,7 +3,7 @@
       p-label="Orçamentos"
       p-type="default"
       p-kind="primary"
-      [p-disabled] = "true"
+      [p-disabled]="true"
   >
   </po-button>
   <po-button class="po-md-3"
@@ -33,50 +33,16 @@
   (p-click)="onClickButton()">
 -->
 </div>
-<!--Botao para voltar()-->
-<div class="po-row main">
-  <h1 style="text-align: center;" class="po-mt-4 po-md-12 po-font-display">
-    Criar
-  </h1>
-  <form action="#" class="po-row" id="formulario-criar">
-    <po-input
-        class="po-md-6"
-        name="nome"
-        p-label="Nome"
-        p-placeholder="Controle de tv sansung"
-        p-mask="email"
-        p-mask-format-model="false"
-        [p-minlength]="1"
-        [p-no-autocomplete]="false"
+<div class="po-row center orcamento-main">
+  <h1 style="text-align: center;" class="po-md-12 po-font-display">Orçamentos</h1>
+  <po-button class="po-md-12"
+    p-kind="primary"
+    p-label="Criar"
     >
-    </po-input>
-    <po-checkbox
-        p-label="É liquido?"
-        name="">
-    </po-checkbox>
-    <po-number
-        class="po-md-2"
-        name="Quantidade"
-        p-clean="true"
-        p-disabled="false"
-        p-error-pattern=""
-        p-help=""
-        p-icon="po-icon po-icon-archive"
-        p-label="quantidade"
-        p-mask-format-model="false"
-        [p-maxlength]="1000"
-        [p-minlength]="1"
-        [p-no-autocomplete]="false"
-        p-step="1">
-    </po-number>
-    <po-textarea class="po-md-12"
-    name="descricao"
-    p-label="Descrição"
-    p-max-length="10000"
-    p-min-length="8"
-    p-placeholder="Faça uma descrição do produto"
+  </po-button>
+  <po-button class="po-md-12"
+    p-kind="primary"
+    p-label="Pesquisar"
     >
-    </po-textarea>
-
-  </form>
+  </po-button>
 </div>

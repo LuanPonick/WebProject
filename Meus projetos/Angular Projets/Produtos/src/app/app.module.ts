@@ -7,10 +7,6 @@ import { PoModule } from '@po-ui/ng-components';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { PoButtonModule } from '@po-ui/ng-components';
-import { PoFieldModule } from '@po-ui/ng-components';
-import { PoDynamicModule } from '@po-ui/ng-components';
-
-
 
 @NgModule({
   declarations: [
@@ -22,9 +18,6 @@ import { PoDynamicModule } from '@po-ui/ng-components';
     PoModule,
     HttpClientModule,
     PoButtonModule,
-    PoFieldModule,
-    PoDynamicModule,
-    
     RouterModule.forRoot([])
   ],
   providers: [],

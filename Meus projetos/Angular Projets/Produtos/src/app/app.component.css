@@ -5,15 +5,12 @@
 .orcamento-main{
     width: 40%;
 }
-.orcamento-main>*{
+.main>*{
     margin-block: 15px;
 }
-.center{ 
+.center{
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-}
-#formulario-criar{
-    align-items: center;
 }
