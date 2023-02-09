@@ -39,6 +39,7 @@
 >> ~~~
 >>A ideia base é basicamente essa. A **ULTIMA** variavel criada no filter(nesse caso o _arraynametemp_ ) ele é o array _nomearray_.
 >>
+>
 >># _Reduce()_
 >>Ele tem uma ideia de reduzir a quantidade de valores de um array para apenas um valor
 >>### _sintaxe_ :
@@ -57,6 +58,27 @@
 >>const idadesSomada = nomesValores.reduce((numero,valores)=> numero + valores.idade, 0);
 >>~~~
 >>Unica diferença real é que no valores (que é o array/list nesse caso) eu tive que falar qual seria o atributo que eu quero usar e nao so colocar ela.
+>>
+>
+>># Every()
+>>Serve para quando deseja saber se um array respeita uma determinada regra/calculo retornando um valor boleano.
+>>### Ex
+>>~~~JavaScript
+>>const array = [1, 3, 5, 7, 9];
+>>var teste = array.every((valls)=> valls % 2 == 1);
+>>// teste == true
+>>~~~
+>>
+>
+>># Some()
+>>Serve para quando se quer testar se pelomenos um valor do array tem um valor determinado valor.
+>>### Ex
+>>~~~JavaScript
+>>const array = [1, 3, 5, 7, 9];
+>>var teste = array.some((valls)=> valls == 1);
+>>// teste == true
+>>~~~
+>>
 >>
 >>---
 >---
