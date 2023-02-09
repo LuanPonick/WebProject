@@ -68,7 +68,7 @@
 >>var teste = array.every((valls)=> valls % 2 == 1);
 >>// teste == true
 >>~~~
->>
+>>---
 >
 >># Some()
 >>Serve para quando se quer testar se pelomenos um valor do array tem um valor determinado valor.
@@ -78,7 +78,8 @@
 >>var teste = array.some((valls)=> valls == 1);
 >>// teste == true
 >>~~~
->>
+>
+>># Find()
 >>
 >>---
 >---
