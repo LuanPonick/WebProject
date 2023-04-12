@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@700&display=swap');
+
+:root{
+    --header-heigth: 65px;
+    --main-color:#ffffffea;
+}
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #35363E;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(110, 112, 126);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid #35363E;  /* creates padding around scroll thumb */
+}
+
+img{
+    height: 100%;
+}
+body{
+    background-color: rgba(82, 84, 98, 1);
+}
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: var(--header-heigth);
+    z-index: 100;
+    top: 0;
+
+    background-color: #4A4D6C;
+    box-shadow: 11px 2px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 70px 0px;
+
+    padding-block: 5px;
+    padding-inline: 33px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+header > a{
+    height: 100%;
+    position: relative;
+}
+header .no-collapsed{
+    display: flex;
+    height: 100%;
+}
+header .no-collapsed a{
+    display: block;
+
+    height: 100%;
+
+    text-decoration: none;
+}
+header .no-collapsed img{
+    z-index: 2;
+    margin-left: 35px;
+}
+header .collapsed {
+    display: none;
+}
+
+
+
+main{
+    position: relative;
+    z-index: 1;
+    
+    background-attachment: fixed;
+    padding-inline: 130px;
+    padding-bottom: 50px;
+    margin-inline: 60px;
+    margin-block-start: var(--header-heigth);
+
+    background-image: url(../imgs/mains/img1/mid.jpg);
+    background-size: 100%;
+    background-position-y: -570px;
+}
+main .escurecer{
+    position: absolute;
+    z-index: 2;
+
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.42);
+}
+main *{
+    position: relative;
+    z-index: 3;
+}
+main h2{
+    margin-bottom: 94px;
+
+    font-family: 'Inder';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    text-decoration-line: underline;
+    
+    text-transform: capitalize;
+
+    color: var(--main-color);
+}
+main nav{
+    display: flex;
+    row-gap: 55px;
+    flex-direction: column;
+}
+main nav a{
+    display: flex;
+    align-items: center;
+
+    color: var(--main-color);
+    text-decoration: none;
+
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+main nav a img{
+    height: 75px;
+    margin-right: 10px;
+}
+
+
+
+#sobre-nos{
+    height: 560px;
+    margin-top: 60px;
+    margin-inline: 60px;
+    position: relative;
+
+    background-color: rgba(255, 0, 0, 0);
+}
+#sobre-nos .profundidade-3,
+#sobre-nos .profundidade-2,
+#sobre-nos .profundidade-1{
+    position: absolute;
+}
+
+#sobre-nos .profundidade-3{
+    height: 97%;
+    width: 70%;
+    z-index: 6;
+    background-color: rgba(255, 255, 255, 0);
+}
+#sobre-nos .profundidade-3 .cabecalho{
+    padding-left: 10px;
+    padding-top: 10px;
+    z-index: 2;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+#sobre-nos .profundidade-3 .cabecalho h2{
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    z-index: 2;
+    word-wrap: normal;
+    color: #FFFFFF;
+}
+#sobre-nos .profundidade-3 .cabecalho img{
+    width: 80px;
+    z-index: 2;
+
+}
+#sobre-nos .profundidade-3 .img{
+    top: 0;
+    background-image: url(../imgs/mains/img2/mid.jpg);
+    transform: scaleX(-100%);
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    background-size: cover;
+    background-position-y: 55%;
+    z-index: 1;
+}
+#sobre-nos .profundidade-2{
+    height: 98%;
+    width: 94%;
+    z-index: 2; 
+
+    background: rgba(0, 0, 0, 0.2);
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: rgba(21, 28, 66, 0.5);
+    border-radius: 0px 0px 20px 0px;
+}
+#sobre-nos .profundidade-1{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.2);
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0px 0px 10px 0px;    
+}
+#sobre-nos .profundidade-1 p{
+    width: 41.8%;
+    position: absolute;
+    right: 0;
+    height: auto;
+
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: right;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 0px 60px;
+}
+#sobre-nos .profundidade-3 .footer{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    z-index: 4;
+    padding-left: 20px;
+    
+
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+#nossas-lojas{
+    background-color: rgba(0, 0, 0, 0);
+    height: 1100px;
+    margin-top: 20px;
+}
+#nossas-lojas .header{
+    height: 40%;
+    background-color: rgb(0, 0, 0);
+    background-image: url(../imgs/mains/img3/mid.jpg);
+    background-size: 100%;
+    background-position-y: 30%;
+    
+}
+#nossas-lojas .header img{
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-inline: auto;
+}
+#nossas-lojas h2{
+    background-color: rgba(0, 0, 0, 0.2);
+
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 69px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #FFFFFF;
+}
+#nossas-lojas .body{
+    display: flex;
+    height: 60%;
+    padding-inline: 60px;
+}
+#nossas-lojas .body img{
+    width: 200px;
+}
+
+#nossas-lojas .body .img{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../imgs/mains/img4/mid.jpg);
+    background-size: 100%;
+    filter: brightness(70%);
+}
+#nossas-lojas .body ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+    padding-inline: 4%; 
+    justify-content: space-evenly;
+}
+#nossas-lojas .body a,
+#nossas-lojas .body li{
+    width: 100%;
+}
+#nossas-lojas .body a{
+    display: flex;
+    align-items: center;
+
+    font-family: 'Imbue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+#planos-futuro{
+    height: 800px;
+    width: 100%;
+    
+    
+    background-color: red;
+    margin-top: 30px;
+    padding-inline: 60px;
+    position: relative;
+    background: #6C6D90;
+}
+#planos-futuro #img-top,
+#planos-futuro #img-bottom{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+}
+#planos-futuro #img-top{
+    top: 0;
+    right: 0;
+}
+#planos-futuro #img-bottom{
+    bottom: 0;
+    left: 0;
+}
+#planos-futuro .conteudo{
+    width: 80%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 80px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+#planos-futuro .conteudo img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 0;
+    left: 50%;
+}
+#planos-futuro .conteudo h2,
+#planos-futuro .conteudo p{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+}
+#planos-futuro .conteudo h2{
+    font-size: 50px;
+    line-height: 50px;
+}
+#planos-futuro .conteudo p{
+    margin-top: 30px;
+    font-size: 30PX;
+    margin-inline:60px ;
+}
+footer{
+    background-color: #6C6D90;
+    height: auto;
+    width: 100%;
+    bottom: 0;
+    padding: 6px;
+    margin-top: 20px;
+    text-align: center;
+}
+footer span{
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+@media (max-width:900px) {
+    :root{
+        --header-heigth: 60px;
+    }
+    header{
+        border-end-end-radius:15px;
+        padding-inline: 15px;
+    }
+    header .no-collapsed{
+        display: none;
+    }
+    header .collapsed{
+        display: block;
+    }
+    header button{
+        height: calc(var(--header-heigth) - 5px);
+        background-color: #ffffff00;
+        border: 0;
+    }
+    header button:hover{
+        cursor: pointer;
+    }
+
+    main{
+        margin-inline: 0;
+        background-position-y:25%;
+        background-position-x: right;
+        padding-inline:0;
+        background-size: cover;
+        height: 450px;
+    }
+    main .escurecer{
+        background-image: linear-gradient(15deg, rgba(255, 255, 255, 0.096) 20% , rgba(0, 0, 0, 0) 100%);
+        background-color: rgba(255, 255, 255, 0.068);
+    }
+    main nav{
+        row-gap: 0px;
+        height: 50%;
+        justify-content: space-around
+    }
+    main h2{
+        font-size: 7vw;
+        text-align: center;
+        line-height: 38px;
+    }
+    main nav a{
+        font-size: 20px;
+        padding-left:20px ;
+    }
+    main nav a img{
+        width: 50px;
+        height: 50px;
+    }
+
+
+    #sobre-nos{
+        margin-inline: 0;
+    }
+    #sobre-nos .profundidade-3 .cabecalho{
+        column-gap: 0px;
+        padding-left: 0;
+        width: 94vw;
+        justify-content: flex-end;
+        column-gap: 12px;
+        padding-right: 8%;
+    }
+    #sobre-nos .profundidade-3 .cabecalho h2{
+        font-size: 6vw;
+    }
+    
+    #sobre-nos .profundidade-1{
+        z-index: initial;
+    }
+    #sobre-nos .profundidade-1 p{
+        width: 80%;
+        font-size: 16px;
+        z-index: 9;
+        line-height: 26px;
+        top: calc(80% - 50%);
+    }
+    #sobre-nos .profundidade-3 .cabecalho img{
+        width: 60px;
+    }
+    #sobre-nos .profundidade-3 .img{
+        right: 0;
+        width: 100%;
+    }
+    #sobre-nos .profundidade-3 .footer{
+        width: 94vw;
+        padding: 0;
+        font-size: 20px;
+    }
+    #sobre-nos .profundidade-3 .img{
+        background-position-x: center;
+        background-position-y: 48%;
+        background-size: 220%;
+    }
+    #nossas-lojas{
+        height: 600px;
+    }
+    #nossas-lojas .header{
+        background-size: cover;
+        background-position: center center;
+    }
+    #nossas-lojas .header img{
+        height: 70px;
+        width: 70px;
+    }
+    #nossas-lojas h2{
+        font-size: 40px;
+    }
+    #nossas-lojas .body{
+        padding-inline: 0;
+    }
+    #nossas-lojas .body ul{
+        padding: 0;
+        margin-left: -35px;
+        z-index: 6;
+    }
+    #nossas-lojas .body img{
+        width: 70px;
+    }
+    #nossas-lojas .body .img{
+        background-position: center;
+        background-size: cover;
+    }
+    #nossas-lojas .body a{
+        font-size: 34px;
+        line-height: 32px;
+    }
+
+    #planos-futuro{
+        height: 350px;
+        
+    }
+    #planos-futuro .conteudo{
+        width: 100%;
+        border-radius: 20px;
+        height: 95%;
+    }
+    #planos-futuro .conteudo img{
+        width: 70px;
+        height: 70px;
+    }
+    #planos-futuro .conteudo h2{
+        font-size: 32px;
+        line-height: 0;
+    }
+    #planos-futuro .conteudo p{
+        font-size: 16PX;
+        margin-inline: 15px;
+    }
+    footer span{
+        font-size: 13px;
+        
+    }
+    
+    
+}
