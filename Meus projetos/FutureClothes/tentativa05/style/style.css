@@ -37,7 +37,7 @@ header img{
     transition-duration: 0.4s;
 }
 header img:hover{
-    background-color: rgb(32, 50, 120);
+    background-color: rgb(191, 201, 241);
     border-radius: 60px;
     transition-duration: 1s;
 }

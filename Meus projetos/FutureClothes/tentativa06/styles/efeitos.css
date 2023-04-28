@@ -1,0 +1,15 @@
+header > a:hover, header .collapsed button:hover{
+    border-radius: 120%;
+    background-color: rgb(98, 126, 238);
+    border-radius: 60px;
+    transition-duration: 1.5s;
+}
+header .no-collapsed a:hover{
+    transition: 0.2s;
+    padding-block:3px;
+    margin: 3px;
+}
+main nav a:hover img{
+    transition: all 1.5s;
+    margin-right: 30%;
+}
