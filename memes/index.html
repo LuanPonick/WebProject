@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<style>
+			*{
+				padding:0px;
+			}
+			#mainButton{
+				color:white;
+				border:0px;
+				background-color:#BFE3B4;
+				border-radius:10px;
+				padding:15px 10px;
+				position:absolute;
+				z-index:1000;
+				left:50%;
+				top:50%;
+				transform: translate(-50%,50%);
+				font-size:40px;
+			}
+			#aaaa{
+				background-image: url(https://media.tenor.com/lJo9XRi0r4IAAAAM/berti-sarrando-bruno-berti-sarrando.gif);
+				width:100%;
+				height:100%;
+				position:absolute;
+				background-size: cover;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="aaaa">
+			
+		</div>
+		<button id="mainButton" onclick="eventoFoda()"> click em mim</button>
+
+	</body>
+	<script>
+		function eventoFoda(){
+			var sexo2 = document.querySelector("#aaaa");
+			sexo2.style.display = "block";
+			var sexo = document.querySelector("#mainButton");
+			sexo.style.display = "none";
+			
+			
+		}	
+	</script>
+</html>
